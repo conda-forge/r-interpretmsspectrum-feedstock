@@ -1,4 +1,4 @@
-{% set version = "1.4.5" %}
+{% set version = "1.5.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/InterpretMSSpectrum_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/InterpretMSSpectrum/InterpretMSSpectrum_{{ version }}.tar.gz
-  sha256: 8095ccb33db4b842a1b2dff7ed21237eea504e07a7828d6e84ab2edf0ec2ef53
+  sha256: 7bce7575120b714572dc712585cf8fcc0747340e012e74fe4f106fa133fad5d6
 
 build:
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
