@@ -1,4 +1,4 @@
-{% set version = "1.5.2" %}
+{% set version = "1.5.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/InterpretMSSpectrum_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/InterpretMSSpectrum/InterpretMSSpectrum_{{ version }}.tar.gz
-  sha256: 7bce7575120b714572dc712585cf8fcc0747340e012e74fe4f106fa133fad5d6
+  sha256: 95e1888d030c1333625e0a9efcae5780333257749a82fc17f79317fdd018486e
 
 build:
   number: 0
@@ -39,8 +39,8 @@ test:
 about:
   home: <doi:10.1021/acs.analchem.6b02743>
   license: GPL-3.0-only
-  summary: High resolution mass spectrometry yields often large data sets of spectra from compounds which are not present in available libraries. These spectra need to be annotated and interpreted.'InterpretMSSpectrum' provides a set of functions to perform such tasks for Electrospray-Ionization and Atmospheric-Pressure-Chemical-Ionization
-    derived data in positive and negative ionization mode.
+  summary: High resolution mass spectrometry yields often large data sets of spectra from compounds which are not present in available libraries. These spectra need to be annotated and interpreted.'InterpretMSSpectrum' provides a set of functions to perform such tasks for Electrospray-Ionization and 
+    Atmospheric-Pressure-Chemical-Ionization derived data in positive and negative ionization mode.
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
