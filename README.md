@@ -3,7 +3,7 @@ About r-interpretmsspectrum-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-interpretmsspectrum-feedstock/blob/main/LICENSE.txt)
 
-Home: <doi:10.1021/acs.analchem.6b02743>
+Home: https://github.com/janlisec/InterpretMSSpectrum
 
 Package license: GPL-3.0-only
 
