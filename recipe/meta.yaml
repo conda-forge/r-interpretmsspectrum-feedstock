@@ -17,6 +17,10 @@ build:
   rpaths:
     - lib/R/lib/
     - lib/
+  missing_dso_whitelist:
+    - '*/R.dll'        # [win]
+    - '*/Rblas.dll'    # [win]
+    - '*/Rlapack.dll'  # [win]
 
 requirements:
   build:
@@ -26,10 +30,12 @@ requirements:
     - r-base
     - r-envipat
     - r-plyr
+    - r-rcdk
   run:
     - r-base
     - r-envipat
     - r-plyr
+    - r-rcdk
 
 test:
   commands:
@@ -37,7 +43,7 @@ test:
     - "\"%R%\" -e \"library('InterpretMSSpectrum')\""  # [win]
 
 about:
-  home: <doi:10.1021/acs.analchem.6b02743>
+  home: https://github.com/janlisec/InterpretMSSpectrum
   license: GPL-3.0-only
   summary: High resolution mass spectrometry yields often large data sets of spectra from compounds which are not present in available libraries. These spectra need to be annotated and interpreted.'InterpretMSSpectrum' provides a set of functions to perform such tasks for Electrospray-Ionization and 
     Atmospheric-Pressure-Chemical-Ionization derived data in positive and negative ionization mode.
